@@ -9,4 +9,4 @@ ZDAQX is a quick, anonymous HTTP file transfer server. The server runs on Node.J
 
 The only prerequisite for this program is having a fairly recent version of Node.JS installed.
 
-Simply download the code from Github and `cd` to the directory. Then run `node index.js` and the server will run. The default port is 8627.
+Simply download the code from Github and `cd` to the directory. Then run `node index.js` and the server will run. The default port is 8628.
