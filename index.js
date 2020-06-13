@@ -96,6 +96,7 @@ function register_upload(c,p,t) {
 
 function handle_upload(q,s) {
     var f = new formidible.IncomingForm();
+    f.uploadDir = "zdaqx_tmp/";
     f.parse(q,function(err,fields,files){
         var c = generate_code();
         var op = files.uf.path;
