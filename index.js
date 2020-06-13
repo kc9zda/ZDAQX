@@ -23,9 +23,11 @@ function load_upload_list() {
 }
 
 function prune(c) {
+    var fn;
     for (var i=0;i<uploads.length;i++) {
         if (uploads[i].code == c) {
-            fs.unlinkSync("zdaqx_tmp/"+uploads[i].code+"_"+uploads[i].path);
+            fn = "zdaqx_tmp/"+uploads[i].code+"_"+uploads[i].path;
+            if (fs.existsSync(fn)) fs.unlinkSync(fn);
             uploads.splice(i,1);
             return;
         }
